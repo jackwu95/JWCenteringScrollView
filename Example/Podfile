@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'JWCenteringScrollView', :exclusive => true do
+  pod "JWCenteringScrollView", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "JWCenteringScrollView", :path => "../"
+
+  
+end
