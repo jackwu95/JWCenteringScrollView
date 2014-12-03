@@ -1,0 +1,14 @@
+PODS:
+  - JWCenteringScrollView (0.1.0)
+
+DEPENDENCIES:
+  - JWCenteringScrollView (from `../`)
+
+EXTERNAL SOURCES:
+  JWCenteringScrollView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JWCenteringScrollView: 36ee3c7bab108a8f5609f45984357082678cf0af
+
+COCOAPODS: 0.35.0
