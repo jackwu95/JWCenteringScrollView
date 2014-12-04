@@ -92,7 +92,6 @@
   _subviewSize = subviewSize;
   widthConstraint.constant = subviewSize.width;
   heightConstraint.constant = subviewSize.height;
-  self.contentSize = subviewSize;
   [self setNeedsUpdateConstraints];
   [self updateConstraintsIfNeeded];
   [self updateZoom];

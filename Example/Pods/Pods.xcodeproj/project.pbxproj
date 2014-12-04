@@ -1,737 +1,1610 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		28FE5F0D5DDBBDE5F897139F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEE274CEB5277A835938834 /* Foundation.framework */; };
-		38806DE78D1FE0BC54CC0BF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D073369A969B12497C8887 /* UIKit.framework */; };
-		483A7A3C080CC0E60FC2BD74 /* JWCenteringScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F84AF0077B9C22FA87F008F6 /* JWCenteringScrollView.m */; };
-		4DD0CD7AB058C31349725E2A /* Pods-JWCenteringScrollView-JWCenteringScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6E913CA6ACF7E120F6C9DF /* Pods-JWCenteringScrollView-JWCenteringScrollView-dummy.m */; };
-		67A659AFD45F5CB673716795 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D073369A969B12497C8887 /* UIKit.framework */; };
-		71B6DCDA4D3C3BDBB0A860A9 /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B5B923467107F1FC1BC529 /* Pods-Tests-dummy.m */; };
-		9AB2FD6A4904EB66DE3C7D7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEE274CEB5277A835938834 /* Foundation.framework */; };
-		A359F87BDB56865D7D97374C /* Pods-Tests-JWCenteringScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5926414C3E7E91667BB64FD7 /* Pods-Tests-JWCenteringScrollView-dummy.m */; };
-		CD57438FF75DACCCB666AC1B /* JWCenteringScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B64FBB6A89E5B7F5E1103CB /* JWCenteringScrollView.h */; };
-		DCC1C40750FBD8FF596F4D6F /* JWCenteringScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F84AF0077B9C22FA87F008F6 /* JWCenteringScrollView.m */; };
-		EAE2428C0A43828151524707 /* Pods-JWCenteringScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C76233861CBC261BAD7D4D1D /* Pods-JWCenteringScrollView-dummy.m */; };
-		FB7E2FF7CC1ACF2B0BDFF704 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEE274CEB5277A835938834 /* Foundation.framework */; };
-		FBB21456E1EF03409653F261 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEE274CEB5277A835938834 /* Foundation.framework */; };
-		FBC14F912BFF692195A30D89 /* JWCenteringScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B64FBB6A89E5B7F5E1103CB /* JWCenteringScrollView.h */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1A3D209FD88DF92199D392AC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 05AFC7E0A2E78D0B824775C6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F48CEF5EEBCADDA93FCDB0B0;
-			remoteInfo = "Pods-Tests-JWCenteringScrollView";
-		};
-		CFB9243D5E7F3459402E6378 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 05AFC7E0A2E78D0B824775C6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 500A72AE77C057D427267ADC;
-			remoteInfo = "Pods-JWCenteringScrollView-JWCenteringScrollView";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		036B77E6EC61EC585F211E2E /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
-		0ABBB1FA352D8826C54C14D7 /* Pods-JWCenteringScrollView-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JWCenteringScrollView-environment.h"; sourceTree = "<group>"; };
-		285FF36C5E29CEA81A2F358D /* libPods-JWCenteringScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWCenteringScrollView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B8AD5CF3FB5D86C7D171A17 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		310435D0AB66CD117F6DCDF8 /* Pods-JWCenteringScrollView-JWCenteringScrollView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWCenteringScrollView-JWCenteringScrollView.xcconfig"; sourceTree = "<group>"; };
-		3B64FBB6A89E5B7F5E1103CB /* JWCenteringScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWCenteringScrollView.h; path = Pod/Classes/JWCenteringScrollView.h; sourceTree = "<group>"; };
-		3D1DF4A5FA162F48B7C8F082 /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3FA2CC73500CC1DFC7985270 /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		55D9941A11356E0F85A23AA3 /* Pods-Tests-JWCenteringScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Tests-JWCenteringScrollView-prefix.pch"; path = "../Pods-Tests-JWCenteringScrollView/Pods-Tests-JWCenteringScrollView-prefix.pch"; sourceTree = "<group>"; };
-		5926414C3E7E91667BB64FD7 /* Pods-Tests-JWCenteringScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Tests-JWCenteringScrollView-dummy.m"; path = "../Pods-Tests-JWCenteringScrollView/Pods-Tests-JWCenteringScrollView-dummy.m"; sourceTree = "<group>"; };
-		5BEC27A6E9C7717E74619E08 /* Pods-Tests-JWCenteringScrollView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-JWCenteringScrollView.xcconfig"; path = "../Pods-Tests-JWCenteringScrollView/Pods-Tests-JWCenteringScrollView.xcconfig"; sourceTree = "<group>"; };
-		6160A094A3F5E5A265018A89 /* Pods-JWCenteringScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWCenteringScrollView.release.xcconfig"; sourceTree = "<group>"; };
-		655A990F90AF380B9D638300 /* Pods-JWCenteringScrollView-JWCenteringScrollView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWCenteringScrollView-JWCenteringScrollView-Private.xcconfig"; sourceTree = "<group>"; };
-		6D7A31479E7B7E6A0B5CAE2E /* Pods-JWCenteringScrollView-JWCenteringScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JWCenteringScrollView-JWCenteringScrollView-prefix.pch"; sourceTree = "<group>"; };
-		79FD18C14ABE69BD0549ACEA /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		7BEE274CEB5277A835938834 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7DBBC4861C761481240DC1ED /* Pods-JWCenteringScrollView-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JWCenteringScrollView-resources.sh"; sourceTree = "<group>"; };
-		7EDC476E5824739F59DDCC00 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		7F6E913CA6ACF7E120F6C9DF /* Pods-JWCenteringScrollView-JWCenteringScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JWCenteringScrollView-JWCenteringScrollView-dummy.m"; sourceTree = "<group>"; };
-		8DAC1F3C110E5DFC0D896A53 /* Pods-JWCenteringScrollView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JWCenteringScrollView-acknowledgements.markdown"; sourceTree = "<group>"; };
-		963C49A54C4C1EC81549A935 /* libPods-JWCenteringScrollView-JWCenteringScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWCenteringScrollView-JWCenteringScrollView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A53E852E28DB3A36AAE99E50 /* Pods-Tests-JWCenteringScrollView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-JWCenteringScrollView-Private.xcconfig"; path = "../Pods-Tests-JWCenteringScrollView/Pods-Tests-JWCenteringScrollView-Private.xcconfig"; sourceTree = "<group>"; };
-		BB2592F35B84295B79627EB4 /* libPods-Tests-JWCenteringScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-JWCenteringScrollView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C76233861CBC261BAD7D4D1D /* Pods-JWCenteringScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JWCenteringScrollView-dummy.m"; sourceTree = "<group>"; };
-		D4B5B923467107F1FC1BC529 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
-		DC59185E86266212B3160BEB /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
-		E5D073369A969B12497C8887 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		E90D47548C241397AA8A18E7 /* Pods-JWCenteringScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWCenteringScrollView.debug.xcconfig"; sourceTree = "<group>"; };
-		F84AF0077B9C22FA87F008F6 /* JWCenteringScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWCenteringScrollView.m; path = Pod/Classes/JWCenteringScrollView.m; sourceTree = "<group>"; };
-		F93B7A3434F1E18C98185718 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FC829B1060997CD9548B6362 /* Pods-JWCenteringScrollView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JWCenteringScrollView-acknowledgements.plist"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		774DE6655F06C0071F408420 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FB7E2FF7CC1ACF2B0BDFF704 /* Foundation.framework in Frameworks */,
-				67A659AFD45F5CB673716795 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B65315790C23560A3C1FB49F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FBB21456E1EF03409653F261 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA59E72B4F2B4DA7EB56DEDD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28FE5F0D5DDBBDE5F897139F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D20BBF87916D7778224F4024 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9AB2FD6A4904EB66DE3C7D7C /* Foundation.framework in Frameworks */,
-				38806DE78D1FE0BC54CC0BF2 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		1DD4A60348CDC3F213BCA3B1 /* JWCenteringScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				3B64FBB6A89E5B7F5E1103CB /* JWCenteringScrollView.h */,
-				F84AF0077B9C22FA87F008F6 /* JWCenteringScrollView.m */,
-				73A7E6EDADF9D5730EED17B8 /* Support Files */,
-			);
-			name = JWCenteringScrollView;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		55654301137499340D5E8522 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A6241B4B7A805F7324F1B06A /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		73A7E6EDADF9D5730EED17B8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				310435D0AB66CD117F6DCDF8 /* Pods-JWCenteringScrollView-JWCenteringScrollView.xcconfig */,
-				655A990F90AF380B9D638300 /* Pods-JWCenteringScrollView-JWCenteringScrollView-Private.xcconfig */,
-				7F6E913CA6ACF7E120F6C9DF /* Pods-JWCenteringScrollView-JWCenteringScrollView-dummy.m */,
-				6D7A31479E7B7E6A0B5CAE2E /* Pods-JWCenteringScrollView-JWCenteringScrollView-prefix.pch */,
-				5BEC27A6E9C7717E74619E08 /* Pods-Tests-JWCenteringScrollView.xcconfig */,
-				A53E852E28DB3A36AAE99E50 /* Pods-Tests-JWCenteringScrollView-Private.xcconfig */,
-				5926414C3E7E91667BB64FD7 /* Pods-Tests-JWCenteringScrollView-dummy.m */,
-				55D9941A11356E0F85A23AA3 /* Pods-Tests-JWCenteringScrollView-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Pods-JWCenteringScrollView-JWCenteringScrollView";
-			sourceTree = "<group>";
-		};
-		84113107D41D332C828A3F22 /* Pods-JWCenteringScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				8DAC1F3C110E5DFC0D896A53 /* Pods-JWCenteringScrollView-acknowledgements.markdown */,
-				FC829B1060997CD9548B6362 /* Pods-JWCenteringScrollView-acknowledgements.plist */,
-				C76233861CBC261BAD7D4D1D /* Pods-JWCenteringScrollView-dummy.m */,
-				0ABBB1FA352D8826C54C14D7 /* Pods-JWCenteringScrollView-environment.h */,
-				7DBBC4861C761481240DC1ED /* Pods-JWCenteringScrollView-resources.sh */,
-				E90D47548C241397AA8A18E7 /* Pods-JWCenteringScrollView.debug.xcconfig */,
-				6160A094A3F5E5A265018A89 /* Pods-JWCenteringScrollView.release.xcconfig */,
-			);
-			name = "Pods-JWCenteringScrollView";
-			path = "Target Support Files/Pods-JWCenteringScrollView";
-			sourceTree = "<group>";
-		};
-		A6241B4B7A805F7324F1B06A /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				7BEE274CEB5277A835938834 /* Foundation.framework */,
-				E5D073369A969B12497C8887 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		AC3588596A66AABDE9C6334B = {
-			isa = PBXGroup;
-			children = (
-				79FD18C14ABE69BD0549ACEA /* Podfile */,
-				BA2B1E2C9B7E2C05EFF37C79 /* Development Pods */,
-				55654301137499340D5E8522 /* Frameworks */,
-				FBAB17129EDF0627AC8D2CED /* Products */,
-				C8D1440FF26E2FE0DC59F7F9 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		BA2B1E2C9B7E2C05EFF37C79 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1DD4A60348CDC3F213BCA3B1 /* JWCenteringScrollView */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		C8D1440FF26E2FE0DC59F7F9 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				84113107D41D332C828A3F22 /* Pods-JWCenteringScrollView */,
-				D6A5F5C0F090ED8F03A85970 /* Pods-Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		D6A5F5C0F090ED8F03A85970 /* Pods-Tests */ = {
-			isa = PBXGroup;
-			children = (
-				3FA2CC73500CC1DFC7985270 /* Pods-Tests-acknowledgements.markdown */,
-				3D1DF4A5FA162F48B7C8F082 /* Pods-Tests-acknowledgements.plist */,
-				D4B5B923467107F1FC1BC529 /* Pods-Tests-dummy.m */,
-				DC59185E86266212B3160BEB /* Pods-Tests-environment.h */,
-				036B77E6EC61EC585F211E2E /* Pods-Tests-resources.sh */,
-				F93B7A3434F1E18C98185718 /* Pods-Tests.debug.xcconfig */,
-				7EDC476E5824739F59DDCC00 /* Pods-Tests.release.xcconfig */,
-			);
-			name = "Pods-Tests";
-			path = "Target Support Files/Pods-Tests";
-			sourceTree = "<group>";
-		};
-		FBAB17129EDF0627AC8D2CED /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				285FF36C5E29CEA81A2F358D /* libPods-JWCenteringScrollView.a */,
-				963C49A54C4C1EC81549A935 /* libPods-JWCenteringScrollView-JWCenteringScrollView.a */,
-				2B8AD5CF3FB5D86C7D171A17 /* libPods-Tests.a */,
-				BB2592F35B84295B79627EB4 /* libPods-Tests-JWCenteringScrollView.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		303B464F9A07C4F1BCEAE055 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CD57438FF75DACCCB666AC1B /* JWCenteringScrollView.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3E69C968F7A72F7300035ACA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FBC14F912BFF692195A30D89 /* JWCenteringScrollView.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		500A72AE77C057D427267ADC /* Pods-JWCenteringScrollView-JWCenteringScrollView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 00375F0AD7E2032B27DEEDAA /* Build configuration list for PBXNativeTarget "Pods-JWCenteringScrollView-JWCenteringScrollView" */;
-			buildPhases = (
-				CB2403D8A5D6B09A6FBD1B7C /* Sources */,
-				D20BBF87916D7778224F4024 /* Frameworks */,
-				3E69C968F7A72F7300035ACA /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-JWCenteringScrollView-JWCenteringScrollView";
-			productName = "Pods-JWCenteringScrollView-JWCenteringScrollView";
-			productReference = 963C49A54C4C1EC81549A935 /* libPods-JWCenteringScrollView-JWCenteringScrollView.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		770B74893BBCD3330BD775B5 /* Pods-JWCenteringScrollView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B7F70BE0C2CDC08B91109A9C /* Build configuration list for PBXNativeTarget "Pods-JWCenteringScrollView" */;
-			buildPhases = (
-				DEBDA45022257E772F7BC651 /* Sources */,
-				BA59E72B4F2B4DA7EB56DEDD /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				448B4F906445F602E80487E4 /* PBXTargetDependency */,
-			);
-			name = "Pods-JWCenteringScrollView";
-			productName = "Pods-JWCenteringScrollView";
-			productReference = 285FF36C5E29CEA81A2F358D /* libPods-JWCenteringScrollView.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		ACFD31D62EEFD52E46E79C12 /* Pods-Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CF7FAADC85142DEDC3359BA2 /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
-			buildPhases = (
-				2AFEBAEEC5D9D2D4984F2E66 /* Sources */,
-				B65315790C23560A3C1FB49F /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B7809713821E3C1E78F74B21 /* PBXTargetDependency */,
-			);
-			name = "Pods-Tests";
-			productName = "Pods-Tests";
-			productReference = 2B8AD5CF3FB5D86C7D171A17 /* libPods-Tests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		F48CEF5EEBCADDA93FCDB0B0 /* Pods-Tests-JWCenteringScrollView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 73CDA9BB91F349BFCA1E3DB7 /* Build configuration list for PBXNativeTarget "Pods-Tests-JWCenteringScrollView" */;
-			buildPhases = (
-				9EACB8297E05AF2C68FCAEFB /* Sources */,
-				774DE6655F06C0071F408420 /* Frameworks */,
-				303B464F9A07C4F1BCEAE055 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Tests-JWCenteringScrollView";
-			productName = "Pods-Tests-JWCenteringScrollView";
-			productReference = BB2592F35B84295B79627EB4 /* libPods-Tests-JWCenteringScrollView.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		05AFC7E0A2E78D0B824775C6 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0510;
-			};
-			buildConfigurationList = E7EE53D56543ABC1BF625299 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = AC3588596A66AABDE9C6334B;
-			productRefGroup = FBAB17129EDF0627AC8D2CED /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				770B74893BBCD3330BD775B5 /* Pods-JWCenteringScrollView */,
-				500A72AE77C057D427267ADC /* Pods-JWCenteringScrollView-JWCenteringScrollView */,
-				ACFD31D62EEFD52E46E79C12 /* Pods-Tests */,
-				F48CEF5EEBCADDA93FCDB0B0 /* Pods-Tests-JWCenteringScrollView */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		2AFEBAEEC5D9D2D4984F2E66 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71B6DCDA4D3C3BDBB0A860A9 /* Pods-Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9EACB8297E05AF2C68FCAEFB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DCC1C40750FBD8FF596F4D6F /* JWCenteringScrollView.m in Sources */,
-				A359F87BDB56865D7D97374C /* Pods-Tests-JWCenteringScrollView-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB2403D8A5D6B09A6FBD1B7C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				483A7A3C080CC0E60FC2BD74 /* JWCenteringScrollView.m in Sources */,
-				4DD0CD7AB058C31349725E2A /* Pods-JWCenteringScrollView-JWCenteringScrollView-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEBDA45022257E772F7BC651 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EAE2428C0A43828151524707 /* Pods-JWCenteringScrollView-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		448B4F906445F602E80487E4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-JWCenteringScrollView-JWCenteringScrollView";
-			target = 500A72AE77C057D427267ADC /* Pods-JWCenteringScrollView-JWCenteringScrollView */;
-			targetProxy = CFB9243D5E7F3459402E6378 /* PBXContainerItemProxy */;
-		};
-		B7809713821E3C1E78F74B21 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Tests-JWCenteringScrollView";
-			target = F48CEF5EEBCADDA93FCDB0B0 /* Pods-Tests-JWCenteringScrollView */;
-			targetProxy = 1A3D209FD88DF92199D392AC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		0008DF0331D372167CBE1C3D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A53E852E28DB3A36AAE99E50 /* Pods-Tests-JWCenteringScrollView-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-JWCenteringScrollView/Pods-Tests-JWCenteringScrollView-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		41556F06FAC41B713C75DBF6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F93B7A3434F1E18C98185718 /* Pods-Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		4917EC2DE426B3E81761F9BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A53E852E28DB3A36AAE99E50 /* Pods-Tests-JWCenteringScrollView-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-JWCenteringScrollView/Pods-Tests-JWCenteringScrollView-prefix.pch";
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		633598DE4674E4ED1FED953B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E90D47548C241397AA8A18E7 /* Pods-JWCenteringScrollView.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		720D1ED090EBE124C169FF85 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EDC476E5824739F59DDCC00 /* Pods-Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		9BE312C74B41BE2B1E4C986A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 655A990F90AF380B9D638300 /* Pods-JWCenteringScrollView-JWCenteringScrollView-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-JWCenteringScrollView-JWCenteringScrollView/Pods-JWCenteringScrollView-JWCenteringScrollView-prefix.pch";
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		A92968B182CB5651BAE0C5BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				STRIP_INSTALLED_PRODUCT = NO;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		AABB86DB7494026EA85ED58A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6160A094A3F5E5A265018A89 /* Pods-JWCenteringScrollView.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		D6736BDD0FE2A18EEA1C55CA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 655A990F90AF380B9D638300 /* Pods-JWCenteringScrollView-JWCenteringScrollView-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-JWCenteringScrollView-JWCenteringScrollView/Pods-JWCenteringScrollView-JWCenteringScrollView-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		DF44ADD71BC08FA29FFA428B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-			};
-			name = Debug;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		00375F0AD7E2032B27DEEDAA /* Build configuration list for PBXNativeTarget "Pods-JWCenteringScrollView-JWCenteringScrollView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D6736BDD0FE2A18EEA1C55CA /* Debug */,
-				9BE312C74B41BE2B1E4C986A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		73CDA9BB91F349BFCA1E3DB7 /* Build configuration list for PBXNativeTarget "Pods-Tests-JWCenteringScrollView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0008DF0331D372167CBE1C3D /* Debug */,
-				4917EC2DE426B3E81761F9BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B7F70BE0C2CDC08B91109A9C /* Build configuration list for PBXNativeTarget "Pods-JWCenteringScrollView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				633598DE4674E4ED1FED953B /* Debug */,
-				AABB86DB7494026EA85ED58A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CF7FAADC85142DEDC3359BA2 /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				41556F06FAC41B713C75DBF6 /* Debug */,
-				720D1ED090EBE124C169FF85 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E7EE53D56543ABC1BF625299 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DF44ADD71BC08FA29FFA428B /* Debug */,
-				A92968B182CB5651BAE0C5BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 05AFC7E0A2E78D0B824775C6 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0495AF38DACA40509EA4C60B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FC4408FC2773BC07C33FA510</string>
+				<string>C063DA329CEA17509F15A377</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>05EF917968D5D978E6D6CB74</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-JWCenteringScrollView.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>05F73606FD8DC9DA8B4E6F89</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>JWCenteringScrollView.m</string>
+			<key>path</key>
+			<string>Pod/Classes/JWCenteringScrollView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07215F076F246CB17D52266D</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-JWCenteringScrollView.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>0F3F090BBF926BAB5D691FD0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>JWCenteringScrollView.h</string>
+			<key>path</key>
+			<string>Pod/Classes/JWCenteringScrollView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>105A07A18BA1E45B3E9E8D94</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>07215F076F246CB17D52266D</string>
+				<string>1C768AD4934C5065D2E06037</string>
+				<string>F782D55F1532996A487B4DD3</string>
+				<string>4CC055762C7536DBED3A7F15</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>15443A4B3CBE6C03CF5EEA7D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>354EF3143C5CA9BC3F2CC734</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Development Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1C768AD4934C5065D2E06037</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-JWCenteringScrollView-JWCenteringScrollView.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>22DDCBA945138AF2E0B36D12</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>5A92CA388ED91D8C11552386</string>
+				<string>435A2C134AD5D8FBB57039BB</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2622ADBFA044B90CC36C8F49</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>B1F6AE8414772C90D90F3254</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>4B2682252D492EAFA1C7B241</string>
+			<key>productRefGroup</key>
+			<string>105A07A18BA1E45B3E9E8D94</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>EA888B58C3D81A65D93D8C24</string>
+				<string>E6D5AA5219FB9F5A3E558130</string>
+				<string>E2726887C0B448A776742F59</string>
+				<string>34B8B7B70BB238D1BD03C272</string>
+			</array>
+		</dict>
+		<key>2B5E14F8F4068B9A347B0683</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-JWCenteringScrollView-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>34B8B7B70BB238D1BD03C272</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>9D3C4BA0DCEF4D4A823899AC</string>
+			<key>buildPhases</key>
+			<array>
+				<string>446E14E5CFE1008F987F4203</string>
+				<string>7D2D81E51521004A8D30654F</string>
+				<string>4031C49CB82F906645A71C0B</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-Tests-JWCenteringScrollView</string>
+			<key>productName</key>
+			<string>Pods-Tests-JWCenteringScrollView</string>
+			<key>productReference</key>
+			<string>4CC055762C7536DBED3A7F15</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>354EF3143C5CA9BC3F2CC734</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0F3F090BBF926BAB5D691FD0</string>
+				<string>05F73606FD8DC9DA8B4E6F89</string>
+				<string>E2657FD1321881386C6580E5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>JWCenteringScrollView</string>
+			<key>path</key>
+			<string>../..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3E266B2FD0156F06F19422BA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F3F090BBF926BAB5D691FD0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4031C49CB82F906645A71C0B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B4758C8C9E0EA677BD8295E6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>435A2C134AD5D8FBB57039BB</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B0B0B4C0E5C39B5D169066E2</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>446E14E5CFE1008F987F4203</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D746A4FAD921796DE916AF1D</string>
+				<string>47B76C007369F4F3234203C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>450055A9AFC27361A8AA84C4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>685FF43C3DC4BBE89DA7C49D</string>
+				<string>7118DA5FF0192260B82C7897</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>47B76C007369F4F3234203C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BC467951FD189DE0528D6DC2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>49B82F5BA9C4B156B26929D0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3E266B2FD0156F06F19422BA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4B2682252D492EAFA1C7B241</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C8CFE936A7E89663CBCC160B</string>
+				<string>15443A4B3CBE6C03CF5EEA7D</string>
+				<string>52B1F7DF2269D4A7D3EB425D</string>
+				<string>105A07A18BA1E45B3E9E8D94</string>
+				<string>0495AF38DACA40509EA4C60B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CC055762C7536DBED3A7F15</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-Tests-JWCenteringScrollView.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>500AB82D3528CE7B42E7FC1B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>685FF43C3DC4BBE89DA7C49D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>52B1F7DF2269D4A7D3EB425D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>450055A9AFC27361A8AA84C4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54E81338598F933BD16C31E7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-JWCenteringScrollView-JWCenteringScrollView-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5649C0A195A145AEB7E515AB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-JWCenteringScrollView-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5A92CA388ED91D8C11552386</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>FEE24FBA13B5DEB8BB062C11</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>5A9B98C2426392BF8F01BDC9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-Tests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>627EB64613D42941F5EDC2D5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6565D6C81C1DC58B3CB71D49</string>
+				<string>E6FF9D0930B7CE15F4B58F5B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6565D6C81C1DC58B3CB71D49</key>
+		<dict>
+			<key>fileRef</key>
+			<string>05F73606FD8DC9DA8B4E6F89</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6611EC9BA3EC28E4200CC1E9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Pods-JWCenteringScrollView-JWCenteringScrollView</string>
+			<key>target</key>
+			<string>E6D5AA5219FB9F5A3E558130</string>
+			<key>targetProxy</key>
+			<string>FA1FF8FF24F854079735176A</string>
+		</dict>
+		<key>66DFE0911A2201F5D61BCC24</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>54E81338598F933BD16C31E7</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-JWCenteringScrollView-JWCenteringScrollView/Pods-JWCenteringScrollView-JWCenteringScrollView-prefix.pch</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>685FF43C3DC4BBE89DA7C49D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>7118DA5FF0192260B82C7897</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>73FCF9D36EE60C7FF515E19B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B6FEB4B12C921AB390F4ADB1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>7992F1B7E3B312AD5C8534BE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-Tests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7B44CBF80E75246336C6BBFF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-JWCenteringScrollView-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D2D81E51521004A8D30654F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E27FDF1621E2803F7BDA4098</string>
+				<string>ECCE5073B1201005CEDDFF3D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8847DAC865057A0148D9D0EA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B2F54B95D28B7C51C54366E0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8B48854A96FFC57DC3F8CB3B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DAB6777F164C95E239CECEDC</string>
+				<string>F3325F5222D4C0EC48B2D979</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>992AE03C8DF027E5EDFAD78E</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>2622ADBFA044B90CC36C8F49</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>34B8B7B70BB238D1BD03C272</string>
+			<key>remoteInfo</key>
+			<string>Pods-Tests-JWCenteringScrollView</string>
+		</dict>
+		<key>9D3C4BA0DCEF4D4A823899AC</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C1EB4519B3E2C7148515CEB0</string>
+				<string>FEA4F22DF0D842D73973F7E6</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9EF955EFE1A4CD4D36508B08</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-Tests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9F8F61D74ADBABA38FCBE170</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>73FCF9D36EE60C7FF515E19B</string>
+				<string>A41B11C52B8C0DC40BB302A4</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>A41B11C52B8C0DC40BB302A4</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>05EF917968D5D978E6D6CB74</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>A7642E6DC431BC6C5ADAC6C4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Pods-Tests-JWCenteringScrollView</string>
+			<key>target</key>
+			<string>34B8B7B70BB238D1BD03C272</string>
+			<key>targetProxy</key>
+			<string>992AE03C8DF027E5EDFAD78E</string>
+		</dict>
+		<key>B0B0B4C0E5C39B5D169066E2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Tests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B1F6AE8414772C90D90F3254</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E4B1F18DE6B789D9F64F4ED3</string>
+				<string>EAB4DD85AFD2E3A141799C73</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B2F54B95D28B7C51C54366E0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5649C0A195A145AEB7E515AB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B4758C8C9E0EA677BD8295E6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F3F090BBF926BAB5D691FD0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B6FEB4B12C921AB390F4ADB1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-JWCenteringScrollView.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BC467951FD189DE0528D6DC2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>Pods-Tests-JWCenteringScrollView-dummy.m</string>
+			<key>path</key>
+			<string>../Pods-Tests-JWCenteringScrollView/Pods-Tests-JWCenteringScrollView-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BD8CAA985A0C8A5150835BA9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-JWCenteringScrollView-JWCenteringScrollView-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C063DA329CEA17509F15A377</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C8BD821AC123864E1D819F16</string>
+				<string>9EF955EFE1A4CD4D36508B08</string>
+				<string>5A9B98C2426392BF8F01BDC9</string>
+				<string>F827D27151A8AD98CE3CBCE7</string>
+				<string>7992F1B7E3B312AD5C8534BE</string>
+				<string>FEE24FBA13B5DEB8BB062C11</string>
+				<string>B0B0B4C0E5C39B5D169066E2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-Tests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-Tests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C1EB4519B3E2C7148515CEB0</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>D067614C6EEBAD88CF14A06C</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-Tests-JWCenteringScrollView/Pods-Tests-JWCenteringScrollView-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C8BD821AC123864E1D819F16</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-Tests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C8CFE936A7E89663CBCC160B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>CCEA41B5A2C810F16B61CD46</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>500AB82D3528CE7B42E7FC1B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D067614C6EEBAD88CF14A06C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Tests-JWCenteringScrollView-Private.xcconfig</string>
+			<key>path</key>
+			<string>../Pods-Tests-JWCenteringScrollView/Pods-Tests-JWCenteringScrollView-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D094F81EE41E431F3EDE96F1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-JWCenteringScrollView-environment.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D10D1FBCE0FC5A376D82F388</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>54E81338598F933BD16C31E7</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-JWCenteringScrollView-JWCenteringScrollView/Pods-JWCenteringScrollView-JWCenteringScrollView-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>D1EC89AD909EE97DF0BE2C32</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-JWCenteringScrollView-JWCenteringScrollView.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D746A4FAD921796DE916AF1D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>05F73606FD8DC9DA8B4E6F89</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D86D4B0D271BC92D5D59C0FF</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>D10D1FBCE0FC5A376D82F388</string>
+				<string>66DFE0911A2201F5D61BCC24</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>DAB6777F164C95E239CECEDC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>685FF43C3DC4BBE89DA7C49D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEB77D8C17CA09BAD955AE22</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-JWCenteringScrollView-JWCenteringScrollView-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2657FD1321881386C6580E5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D1EC89AD909EE97DF0BE2C32</string>
+				<string>54E81338598F933BD16C31E7</string>
+				<string>BD8CAA985A0C8A5150835BA9</string>
+				<string>DEB77D8C17CA09BAD955AE22</string>
+				<string>F0C2CE239C0AF3E7C4A70524</string>
+				<string>D067614C6EEBAD88CF14A06C</string>
+				<string>BC467951FD189DE0528D6DC2</string>
+				<string>E6105BA9944A4093EEFF2A95</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>Example/Pods/Target Support Files/Pods-JWCenteringScrollView-JWCenteringScrollView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2726887C0B448A776742F59</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>22DDCBA945138AF2E0B36D12</string>
+			<key>buildPhases</key>
+			<array>
+				<string>E396403482846D1EB9A4672E</string>
+				<string>CCEA41B5A2C810F16B61CD46</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>A7642E6DC431BC6C5ADAC6C4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-Tests</string>
+			<key>productName</key>
+			<string>Pods-Tests</string>
+			<key>productReference</key>
+			<string>F782D55F1532996A487B4DD3</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>E27FDF1621E2803F7BDA4098</key>
+		<dict>
+			<key>fileRef</key>
+			<string>685FF43C3DC4BBE89DA7C49D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E396403482846D1EB9A4672E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FA39EF12A27E8DAD03633D3F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E4B1F18DE6B789D9F64F4ED3</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>E6105BA9944A4093EEFF2A95</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Pods-Tests-JWCenteringScrollView-prefix.pch</string>
+			<key>path</key>
+			<string>../Pods-Tests-JWCenteringScrollView/Pods-Tests-JWCenteringScrollView-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E6D5AA5219FB9F5A3E558130</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>D86D4B0D271BC92D5D59C0FF</string>
+			<key>buildPhases</key>
+			<array>
+				<string>627EB64613D42941F5EDC2D5</string>
+				<string>8B48854A96FFC57DC3F8CB3B</string>
+				<string>49B82F5BA9C4B156B26929D0</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-JWCenteringScrollView-JWCenteringScrollView</string>
+			<key>productName</key>
+			<string>Pods-JWCenteringScrollView-JWCenteringScrollView</string>
+			<key>productReference</key>
+			<string>1C768AD4934C5065D2E06037</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>E6FF9D0930B7CE15F4B58F5B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BD8CAA985A0C8A5150835BA9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E8EE85E6D30F135B2D3CFB58</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F225B6143505A5D61F4E7482</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>EA888B58C3D81A65D93D8C24</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>9F8F61D74ADBABA38FCBE170</string>
+			<key>buildPhases</key>
+			<array>
+				<string>8847DAC865057A0148D9D0EA</string>
+				<string>E8EE85E6D30F135B2D3CFB58</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>6611EC9BA3EC28E4200CC1E9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-JWCenteringScrollView</string>
+			<key>productName</key>
+			<string>Pods-JWCenteringScrollView</string>
+			<key>productReference</key>
+			<string>07215F076F246CB17D52266D</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>EAB4DD85AFD2E3A141799C73</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>ECCE5073B1201005CEDDFF3D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7118DA5FF0192260B82C7897</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F0C2CE239C0AF3E7C4A70524</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Tests-JWCenteringScrollView.xcconfig</string>
+			<key>path</key>
+			<string>../Pods-Tests-JWCenteringScrollView/Pods-Tests-JWCenteringScrollView.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F225B6143505A5D61F4E7482</key>
+		<dict>
+			<key>fileRef</key>
+			<string>685FF43C3DC4BBE89DA7C49D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F3325F5222D4C0EC48B2D979</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7118DA5FF0192260B82C7897</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F782D55F1532996A487B4DD3</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-Tests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F827D27151A8AD98CE3CBCE7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-Tests-environment.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA1FF8FF24F854079735176A</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>2622ADBFA044B90CC36C8F49</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>E6D5AA5219FB9F5A3E558130</string>
+			<key>remoteInfo</key>
+			<string>Pods-JWCenteringScrollView-JWCenteringScrollView</string>
+		</dict>
+		<key>FA39EF12A27E8DAD03633D3F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5A9B98C2426392BF8F01BDC9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FC4408FC2773BC07C33FA510</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2B5E14F8F4068B9A347B0683</string>
+				<string>FDC7279A2EBA19F59A14A84F</string>
+				<string>5649C0A195A145AEB7E515AB</string>
+				<string>D094F81EE41E431F3EDE96F1</string>
+				<string>7B44CBF80E75246336C6BBFF</string>
+				<string>B6FEB4B12C921AB390F4ADB1</string>
+				<string>05EF917968D5D978E6D6CB74</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-JWCenteringScrollView</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-JWCenteringScrollView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDC7279A2EBA19F59A14A84F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-JWCenteringScrollView-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FEA4F22DF0D842D73973F7E6</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>D067614C6EEBAD88CF14A06C</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-Tests-JWCenteringScrollView/Pods-Tests-JWCenteringScrollView-prefix.pch</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>FEE24FBA13B5DEB8BB062C11</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Tests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>2622ADBFA044B90CC36C8F49</string>
+</dict>
+</plist>

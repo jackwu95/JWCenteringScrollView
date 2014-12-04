@@ -7,8 +7,11 @@
 //
 
 #import "JWViewController.h"
+#import "JWCenteringScrollView.h"
 
 @interface JWViewController ()
+
+@property (weak, nonatomic) IBOutlet JWCenteringScrollView *centeringScrollView;
 
 @end
 
@@ -18,6 +21,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    UIImage * kid = [UIImage imageNamed:@"kidOnBeach.JPG"];
+    UIImageView * imageView = [[UIImageView alloc] initWithImage:kid];
+    [self.centeringScrollView.subviewContainer addSubview:imageView];
+    self.centeringScrollView.subviewSize = imageView.bounds.size;
 }
 
 - (void)didReceiveMemoryWarning
